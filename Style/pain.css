@@ -1,0 +1,216 @@
+h2{
+    direction: rtl;
+}
+
+
+.photoMap {
+
+
+    width: 250px;
+
+
+    height: 400px;
+
+
+    position: relative;
+
+    margin: 0 auto;
+
+
+    background-repeat: no-repeat;
+
+}
+
+.photoMap ul {
+
+
+    margin: 0;
+
+
+    padding: 0;
+
+
+    list-style: none;
+
+
+}
+
+
+.photoMap a {
+
+    position: absolute;
+
+    width: 60px;
+
+    height: 35px;
+
+    text-indent: -1000em;
+
+    font-size: 10px;
+}
+
+.photoMap a:hover {
+
+    border: 1px solid #000;
+
+    background: rgba(255, 0, 0, 0.3);
+
+    cursor: pointer;
+    cursor: hand;
+}
+
+.photoMap a:active{
+
+    background: rgba(255, 0, 0, 0.6);
+
+}
+
+.photoMap .hotspot{
+
+    background: rgba(155, 255, 255, 0.3);
+
+}
+
+.photoMap .upLeft a{
+
+    top: 187px;
+    left: 30px;
+
+}
+.photoMap .upMid a{
+
+    top: 187px;
+    left: 95px;
+
+}
+
+.photoMap .upRight a{
+
+    top: 187px;
+    left: 160px;
+
+}
+.photoMap .midLeft a{
+
+    top: 224px;
+    left: 30px;
+
+}
+.photoMap .midMid a{
+
+    top: 224px;
+    left: 95px;
+
+}
+
+.photoMap .midRight a{
+
+    top: 224px;
+    left: 160px;
+
+}
+
+.photoMap .lowLeft a{
+
+    top: 260px;
+    left: 30px;
+
+}
+.photoMap .lowMid a{
+
+    top: 260px;
+    left: 95px;
+
+}
+
+.photoMap .lowRight a{
+
+    top: 260px;
+    left: 160px;
+
+}
+
+#slider{
+    width: 300px;
+    margin: 10 auto;
+}
+
+#sliderValue{
+    height: 40;
+    width: 60;
+    background: rgba(60, 150, 255, 0.7);
+    border-radius: 10;
+    color: white;
+    margin: 10 auto;
+    font-size: 24;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Helvetica, Arial, sans-serif;
+    padding-top: 10;
+
+}
+
+
+#Q3 label{
+    font-size: 30;
+}
+
+#Q9_2{
+    width: 1000;
+    height: 200;
+}
+
+#Q9_2 label{
+    font-size: 18;
+    height: 100;
+}
+
+#Q1 > div > .photoMap{
+    background-image: url("../Resources/complaints/Pain/Q1.jpg");
+    width: 250px;
+    height: 400px;
+    margin-left: 200;
+}
+#Q10 > div > .photoMap{
+    background-image: url("../Resources/complaints/Pain/Q10.jpg");
+}
+
+#painChar{
+    width: 70%;
+}
+
+#9_2 > .desc > label{
+    font-size: 18px;
+}
+
+.second .checkboxes{
+    margin-left: 120;
+    margin-top: 0;
+    clear: both;
+    overflow: auto;
+}
+
+.second .desc{
+    margin-top: 20;
+}
+
+.checkboxes + .reply{
+    background: url("/Resources/continuedark.jpg");
+    background-size: 100%;
+    width: 75;
+    height: 75;
+
+}
+
+.reply:hover{
+    cursor: hand;
+    cursor: pointer;
+    background: url("/Resources/continue.jpg");
+    background-size: 100%;
+}
+
+#Q4 .desc{
+    margin-top: 30;
+}
+
+#finalize{
+    margin-right: 200px;
+}

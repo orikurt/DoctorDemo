@@ -1,0 +1,17 @@
+#cardLink{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#cardLink:active {
+    -webkit-transform: translate(100px);
+    -moz-transform: translate(100px);
+    -o-transform: translate(100px);
+    -ms-transform: translate(100px);
+    transform: translate(100px);
+}

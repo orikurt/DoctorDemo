@@ -1,0 +1,125 @@
+
+h1, h3{
+    margin-top: 5;
+    margin-bottom: 5;
+}
+
+.desc{
+    margin-top: 150px;
+}
+.left_side{
+    float: left;
+    overflow: auto;
+    text-align: center;
+    width: 49%;
+    height: 80%;
+}
+
+.right_side{
+    float: right;
+    overflow: auto;
+    text-align: center;
+    width: 49%;
+    height: 85%;
+}
+
+.Qimg img{
+    width: 250;
+    height: 400;
+}
+
+.Qwrap label, .Qwrap a{
+    position: relative;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+
+.Qwrap label:hover, .Qwrap a:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+
+.bool label{
+    width: 200px;
+    margin-top: 50;
+    padding: 20px 0;
+    background: lightblue;
+    border: 1px solid;
+    border-radius: 15px;
+    font-weight: bold;
+}
+label:hover{
+    cursor: pointer;
+    cursor: hand;
+}
+
+
+.bool .pos{
+    background: forestgreen;
+}
+.bool .neg{
+    background: darkred;
+}
+
+.bool .pos:hover{
+    background: lawngreen;
+}
+.bool input:checked+.pos{
+    background: lawngreen;
+}
+.bool .neg:hover{
+    background: red;
+}
+.bool input:checked+.neg{
+    background: red;
+}
+.multi{
+    float: left;
+    vertical-align: baseline;
+    margin-left: 75;
+}
+.multi label{
+    height: 65;
+    width: 150;
+    font-size: 20;
+    background: royalblue;
+    border-radius: 25;
+    margin-bottom: 20;
+}
+
+.multi label:hover{
+    background: darkblue;
+}
+
+.multi input:checked+label{
+    background: darkblue;
+}
+
+
+.checkboxes{
+    overflow: auto;
+    margin: 0 auto;
+    width: 300;
+    height: 400;
+}
+
+.checkboxes label{
+    direction: rtl;
+    display: block;
+    float: left;
+    width: 105;
+    height: 70;
+    background: rgba(0, 125, 85, 0.7);
+    font-size: 24;
+    border-radius: 5;
+    padding: 5;
+    margin: 10;
+}
+
+.checkboxes label:hover{
+    background: rgba(0, 225, 85, 0.7);
+}
+
+.checkboxes input[type='checkbox']:checked+label{
+    background: rgba(0, 225, 85, 0.7);
+}

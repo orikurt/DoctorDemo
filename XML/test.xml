@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="pain.xsl" ?>
+<complaint>
+        
+    <type>pain</type>
+    <title lang="heb">כאבים</title>
+    <complaintID>1</complaintID>
+
+    <questions>
+    
+        <question>
+        
+            <name>Q1</name>
+
+            <type>multi</type>
+            <reply-type>text</reply-type>
+            <value lang="heb">היכן בבטן ממוקם הכאב</value>
+            
+            <answer>
+                <key>midLeft</key>
+                <printValue lang="heb">ממוקם בבטן אמצעית שמאל</printValue>
+            </answer>
+
+            <answer>
+                <key>midRight</key>
+                <printValue lang="heb">ממוקם בבטן אמצעית ימין</printValue>
+            </answer>
+
+            <answer>
+                <key>midMid</key>
+                <printValue lang="heb">ממוקם בבטן אמצעית</printValue>
+            </answer> 
+        
+            <answer>
+                <key>upLeft</key>
+                <printValue lang="heb">ממוקם בבטן עליונה שמאל</printValue>
+            </answer>
+            
+            <answer>
+                <key>upMid</key>
+                <printValue lang="heb">ממוקם בבטן עליונה באמצע</printValue>
+            </answer>
+
+            <answer>
+                <key>upRight</key>
+                <printValue lang="heb">ממוקם בבטן עליונה ימין</printValue>
+            </answer>
+
+            <answer>
+                <key>lowMid</key>
+                <printValue lang="heb">ממוקם בבטן תחתונה אמצעית</printValue>
+            </answer>
+
+            <answer>
+                <key>lowLeft</key>
+                <printValue lang="heb">ממוקם בבטן תחתונה שמאל</printValue>
+            </answer>
+
+            <answer>
+                <key>lowRight</key>
+                <printValue lang="heb">ממוקם בבטן תחתונה ימין</printValue>
+            </answer>
+
+        </question>
+        
+        <question>
+        
+            <name>Q2</name>
+
+            <type>boolean</type>
+            <reply-type></reply-type>
+            <value lang="heb">האם הכאב מלווה בכאב כללי בגוף?</value>
+            
+            <answer>
+                <key>0</key>
+                <printValue lang="heb">לא מלווה בכאב כללי בגוף</printValue>
+            </answer>
+            
+            <answer>
+                <key>1</key>
+                <printValue lang="heb">מלווה בכאב כללי  בגוף</printValue>
+            </answer>
+
+        </question>
+
+        <question>
+            <name>Q3</name>
+
+            <type>numeric multi</type>
+            <reply-type>int text</reply-type>
+            <value lang="heb">כמה זמן נמשך הכאב?</value>
+            
+            <answer>
+                <key>A</key>
+                <printValue lang="heb">מזה %x ימים</printValue>
+            </answer>
+
+            <answer>
+                <key>B</key>
+                <printValue lang="heb">מזה %x שבועות</printValue>
+            </answer>
+
+            <answer>
+                <key>C</key>
+                <printValue lang="heb">מזה %x חודשים</printValue>
+            </answer>
+
+        </question>
+
+
+        <question>
+            <name></name>
+
+            <type></type>
+            <reply-type></reply-type>
+            <value-heb></value-heb>
+            
+            <answer>
+                <key></key>
+                <printValue></printValue>
+            </answer>
+        </question>
+    
+    </questions>
+        
+</complaint>
+    

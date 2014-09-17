@@ -1,0 +1,29 @@
+body{
+    direction: rtl;
+}
+
+#output_wrap{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 95%;
+    width: 95%;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.outputHead{
+    text-decoration: underline;
+    text-align: center;
+    
+}
+
+.field
+{
+	font-weight:bold;	
+}
+
+.redText{
+    color: red;
+}

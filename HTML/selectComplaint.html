@@ -1,0 +1,37 @@
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Style/selectComplaint.css" type="text/css">
+    <title>DocTor - Complaint selection</title>
+    
+    <script type="text/javascript">
+        
+        $(".complaint").on("click", function(){
+            
+            advanceProgressBar(getQ("pain", 0), getQ("pain", "total"));
+            
+        });
+        
+    </script>
+
+</head>
+
+<body>
+
+<div id="complaint_wrap">
+
+    <h1>בחר את התלונה העיקרית בגינה הגעת למרפאה</h1>
+    <div id="painComplaint" class="complaint sounds" onclick="shiftWindow('#pain')">
+        <h3>כאבי בטן</h3>
+        <img src="../Resources/complaints/pain.png">
+    </div>
+
+    <div id="feverComplaint" class="complaint sounds" onclick="shiftWindow('#fever')">
+        <h3>חום</h3>
+        <img src="../Resources/complaints/fever.jpg">
+    </div>
+
+</div>
+</body>
+</html>

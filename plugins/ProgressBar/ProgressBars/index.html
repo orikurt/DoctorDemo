@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	
+	<title>Progress Bars</title>
+	
+	<link rel='stylesheet' href='css/style.css'>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$(".meter > span").each(function() {
+				$(this)
+					.data("origWidth", $(this).width())
+					.width(0)
+					.animate({
+						width: $(this).data("origWidth")
+					}, 1200);
+			});
+		});
+	</script>
+	
+	<style>
+		
+	</style>
+</head>
+
+<body>
+
+	<div id="page-wrap">
+		
+	  <h1>Progress Bars</h1>
+	  
+	  <p>They should stretch fine to whatever the width of the container element is, 
+	  or just set it. Also they should stretch fine to whatever height you give .meter. </p>
+
+		<div class="meter">
+			<span style="width: 25%"></span>
+		</div>
+		<pre><code>&lt;div class=&quot;meter&quot;&gt;
+	&lt;span style=&quot;width: 25%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+		
+		<div class="meter orange nostripes">
+			<span style="width: 33.3%"></span>
+		</div>
+		<pre><code>&lt;div class=&quot;meter orange nostripes&quot;&gt;
+	&lt;span style=&quot;width: 33.3%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>		
+		
+		<div class="meter red">
+			<span style="width: 80%"></span>
+		</div>
+		<pre><code>&lt;div class=&quot;meter red&quot;&gt;
+	&lt;span style=&quot;width: 80%&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>	
+
+		<div class="meter animate">
+			<span style="width: 50%"><span></span></span>
+		</div>
+		<pre><code>&lt;div class=&quot;meter animate&quot;&gt;
+	&lt;span style=&quot;width: 50%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>		
+
+	</div>
+	
+</body>
+
+</html>

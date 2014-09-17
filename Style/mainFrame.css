@@ -1,0 +1,110 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body{
+	text-align: center;
+    font-family:'Open Sans',sans-serif;
+}
+body:before{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.header{
+    overflow: auto;
+    height: 80;
+}
+
+#small_head{
+    height: 80px;
+    overflow: auto;
+    width: 250px;
+    float: right;
+}
+
+#big_head{
+
+    height: 80px;
+    overflow: auto;
+    width: 1000px;
+    float: right;
+    margin-right: 200px;
+
+}
+
+.container{
+    border: 1px hidden #2187e7;
+    border-radius: 10;
+    position: absolute;
+    top: 88;
+    left: 30;
+    height: 85%;
+    width: 95%;
+    margin: 0 auto;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5)50%, rgba(100, 150, 150, 0.3)100%);
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 5px #999;
+ }
+
+.pending{
+    top: 88;
+    left: -3000;
+}
+
+h1{
+    font-size: 26px;
+    color: #3399cc;
+}
+
+
+input[type='radio'], input[type='checkbox']{
+    visibility: hidden;
+}
+
+label{
+    font-size: 22;
+    margin-top: 5;
+    display: inline-block;
+    border-radius: 2;
+    color: white;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Helvetica, Arial, sans-serif;
+    -webkit-box-shadow: 2px, 3px, 5px, #aaaaaa;
+    box-shadow: 2px, 3px, 5px, #aaaaaa;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+
+.return{
+    background: url("/Resources/backarrowdark.jpg");
+    background-size: 100%;
+    width: 120;
+    height: 55;
+    margin-right: 30;
+}
+
+.return:hover{
+    cursor: hand;
+    cursor: pointer;
+    background: url("/Resources/backarrowlight.jpg");
+    background-size: 100%;
+}
+
+#splash_img > img{
+    margin: auto;
+    margin-top: 100;
+    -moz-box-shadow: 5px 5px 10px rgba(255,255,255,.7);
+    -webkit-box-shadow: 5px 5px 10px rgba(255,255,255,.7);
+    box-shadow: 5px 5px 10px rgba(255,255,255,.7);
+    border: 3px solid #FFF;
+    border-radius: 10;
+    -moz-border-bottom-colors: #033 #039 #777 #888 #999 #aaa #bbb #ccc;
+    -moz-border-top-colors: #033 #039 #777 #888 #999 #aaa #bbb #ccc;
+    -moz-border-left-colors: #033 #039 #777 #888 #999 #aaa #bbb #ccc;
+    -moz-border-right-colors: #033 #039 #777 #888 #999 #aaa #bbb #ccc;
+}

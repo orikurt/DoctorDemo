@@ -1,0 +1,78 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    
+    <script src="../JS/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../JS/jquery-ui.min.js"></script>
+    
+    <link rel="stylesheet" href="../Style/jquery-ui.css">
+    
+    <script type="text/javascript" src="../JS/contentManager.js"></script>
+    
+    <link rel="stylesheet" href="../Style/mainFrame.css" type="text/css">
+    <link rel="stylesheet" href="../Style/login.css" type="text/css">
+    <link rel="stylesheet" href="../Style/questions.css" type="text/css">
+    <link rel="stylesheet" href="../Style/loading.css" type="text/css">
+
+    <title>DocTor Software</title>
+</head>
+<body>
+
+<audio id="hover" src="../Resources/Sounds/hover.mp3"></audio>
+<audio id="click" src="../Resources/Sounds/click.mp3"></audio>
+
+<div class="header">
+
+    <div id="small_head">
+
+        <div class="return sounds"></div>
+
+    </div>
+
+    <div id="big_head">
+
+        <h1>מערכת דוק-תור : דמו</h1>
+
+    </div>
+</div>
+
+    <div class="container showing" id="containerOne">
+        <div id="splash_img">
+            <img src="Resources/logo.jpg">
+        </div>
+        <span>loading</span>
+        <ul id="progress">
+
+            <li>
+                <div id="layer1" class="ball"></div> <!-- layer1 control delay animation / ball is effect -->
+                <div id="layer7" class="pulse"></div> <!-- layer7 control delay animation / pulse is effect  -->
+            </li>
+            <li>
+                <div id="layer2" class="ball"></div>
+                <div id="layer8" class="pulse"></div>
+            </li>
+            <li>
+                <div id="layer3" class="ball"></div>
+                <div id="layer9" class="pulse"></div>
+            </li>
+            <li>
+                <div id="layer4" class="ball"></div>
+                <div id="layer10" class="pulse"></div>
+            </li>
+            <li>
+                <div id="layer5" class="ball"></div>
+                <div id="layer11" class="pulse"></div>
+            </li>
+        </ul>
+
+        <button onclick="changeContent('login.html')">Click me</button>
+
+        <script type="text/javascript" src="../JS/splash.js"></script>
+    </div>
+
+    <div class="container pending" id="containerTwo">
+
+    </div>
+    
+</body>
+</html>

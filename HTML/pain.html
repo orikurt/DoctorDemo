@@ -1,0 +1,420 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+
+   <script type="text/javascript" src="../JS/form.js"></script>
+    <link rel="stylesheet" href="../Style/pain.css" type="text/css">
+    <script type="text/javascript" src="../JS/pain.js"></script>
+    <title>Doctor - כאבי בטן</title>
+
+</head>
+<body>
+
+
+<div class="Qwrap">
+    
+    <form id="pain_form" class="forms" method="post">
+    
+    
+    <div id="painStats" >
+        <input class="Qnum" value="1" hidden>
+        <input class="totalQ" value="12" hidden>
+    </div>
+    
+    <h1>כאבי בטן</h1>
+
+
+    <div id="Q1" class="mapRadio">
+
+    <div class="right_side">
+        <h3>שאלה 1</h3>
+        <h2>היכן בבטן ממוקם הכאב?</h2>
+
+        <div class="photoMap"> <ul>
+
+            <li class="upMid"><a class="hotspot reply" title="upMid">Upper Middle</a></li>
+
+            <li class="upLeft"><a class="hotspot reply" title="upLeft">Upper Left</a></li>
+
+            <li class="upRight"><a class="hotspot reply" title="upRight">Upper Right</a></li>
+
+            <li class="midMid"><a class="hotspot reply" title="midMid">Mid Center</a></li>
+
+            <li class="midLeft"><a class="hotspot reply" title="midLeft">Mid Left</a></li>
+
+            <li class="midRight"><a class="hotspot reply" title="midRight">Mid Right</a></li>
+
+            <li class="lowMid"><a class="hotspot reply" title="lowMid">Low Middle</a></li>
+
+            <li class="lowLeft"><a class="hotspot reply" title="lowLeft">Low Left</a></li>
+
+            <li class="lowRight"><a class="hotspot reply" title="lowRight">Low Right</a></li>
+
+        </ul>
+        </div>
+        
+        <input name="Q1" id="Q1A" hidden/>
+
+    </div>
+
+    <div class="left_side">
+
+        <h1 class="desc">נא לסמן את המקום המדוייק ביותר על גבי התמונה</h1>
+
+    </div>
+
+    </div>
+
+
+    <div id="Q2"  class="bool">
+
+    <div class="right_side">
+        <h3>שאלה 2</h3>
+
+        <h2>האם הכאב מלווה בכאב כללי בגוף?</h2>
+
+        <img src="../Resources/complaints/Pain/Q2.png" height="350" width="250">
+
+
+    </div>
+    <div class="left_side">
+    <div class="desc">
+        <input type="radio" name="Q2" value="1" id="Q2A">
+        <label class="neg reply" for="Q2A">כן</label>
+
+        <input type="radio" name="Q2" value="0" id="Q2B">
+        <label class="pos reply" for="Q2B">לא</label>
+    </div>
+    </div>
+    </div>
+
+
+    <div id="Q3" class="numBar">
+
+    <div class="right_side">
+        <h3>שאלה 3</h3>
+
+        <h2>כמה זמן הכאב נמשך?</h2>
+
+        <img src="../Resources/complaints/Pain/Q3.jpg" height="300">
+
+    </div>
+
+    <div class="left_side">
+
+    <div class="desc">
+        <div id="sliderValue"></div>
+        <div id="slider"></div>
+
+       <input name="Q3" class="sliderValue" hidden> <div class="multi">
+
+            <input type="radio" name="Q3" value="A" id="Q3A">
+            <label for="Q3A" class="reply">ימים</label>
+
+            <input type="radio" name="Q3" value="B" id="Q3B">
+            <label for="Q3B" class="reply">שבועות</label>
+
+            <input type="radio" name="Q3" value="C" id="Q3C">
+            <label for="Q3C" class="reply">חודשים</label>
+
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <div id="Q4">
+
+    <div class="right_side">
+        <h3>שאלה 4</h3>
+        <h2>סוג הכאב</h2>
+
+        <img src="../Resources/complaints/Pain/Q4.gif" width="350">
+
+    </div>
+
+    <div class="left_side">
+
+        <h3 class="desc">ניתן לבחור ביותר מאפשרות אחת</h3>
+
+        <div class="checkboxes">
+
+            <input type="checkbox" name="Q4" value="A" id="Q4A">
+            <label for="Q4A">דוקר</label>
+
+            <input type="checkbox" name="Q4" value="B" id="Q4B">
+            <label for="Q4B">לוחץ</label>
+
+            <input type="checkbox" name="Q4" value="C" id="Q4C">
+            <label for="Q4C">מכווץ \ מעוות</label>
+
+            <input type="checkbox" name="Q4" value="D" id="Q4D">
+            <label for="Q4D">שורף</label>
+
+            <input type="checkbox" name="Q4" value="E" id="Q4E">
+            <label for="Q4E">עמום \ אי-נעימות</label>
+
+            <input type="checkbox" name="Q4" value="F" id="Q4F">
+            <label for="Q4F">נפיחות (מלאות)</label>
+        </div>
+
+        <div class="reply"></div>
+
+    </div>
+    </div>
+
+    <div id="Q5" class="textRadio">
+
+    <div class="right_side">
+        <h3>שאלה 5</h3>
+        <h2>אפיון הכאב</h2>
+
+        <img src="../Resources/complaints/Pain/Q5.jpg" width="350">
+
+    </div>
+
+    <div class="left_side">
+
+        <div id="painChar" class="multi desc">
+
+            <input type="radio" name="Q5" value="A" id="Q5A">
+            <label for="Q5A" class="reply">כל הזמן</label>
+
+            <input type="radio" name="Q5" value="B" id="Q5B">
+            <label for="Q5B" class="reply">לסירוגין</label>
+
+            <input type="radio" name="Q5" value="C" id="Q5C">
+            <label for="Q5C" class="reply">בעיקר ביום</label>
+
+            <input type="radio" name="Q5" value="D" id="Q5D">
+            <label for="Q5D" class="reply">בעיקר בלילה</label>
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+        <div id="Q6" class="textRadio">
+
+        <div class="right_side">
+            <h3>שאלה 6</h3>
+            <h2>יחס לאוכל</h2>
+
+            <img src="../Resources/complaints/Pain/Q6.jpg" width="350">
+        </div>
+
+        <div class="left_side">
+
+            <div class="multi desc">
+
+                <input type="radio" name="Q6" value="A" id="Q6A">
+                <label for="Q6A" class="reply">כואב ללא קשר לאוכל</label>
+
+                <input type="radio" name="Q6" value="B" id="Q6B">
+                <label for="Q6B" class="reply">מחמחיר לאחר האוכל</label>
+
+                <input type="radio" name="Q6" value="C" id="Q6C">
+                <label for="Q6C" class="reply">מוקל אחרי האוכל<br><br></label>
+
+            </div>
+        </div>
+
+        </div>
+
+
+        <div id="Q7" class="textRadio">
+
+        <div class="right_side">
+            <h3>שאלה 7</h3>
+            <h2>יחס לפעילות מעיים</h2>
+
+            <img src="../Resources/complaints/Pain/Q7.png" width="350">
+
+        </div>
+
+        <div class="left_side">
+
+            <div class="multi desc">
+
+                <input type="radio" name="Q7" value="A" id="Q7A">
+                <label for="Q7A" class="reply">כואב ללא קשר ליציאה</label>
+
+                <input type="radio" name="Q7" value="B" id="Q7B">
+                <label for="Q7B" class="reply">מחמיר לאחר יציאה <br><br></label>
+
+                <input type="radio" name="Q7" value="C" id="Q7C">
+                <label for="Q7C" class="reply">מוקל לאחר יציאה<br><br></label>
+
+
+            </div>
+
+        </div>
+
+        </div>
+
+
+
+        <div id="Q8"  class="bool">
+
+        <div class="right_side">
+            <h3>שאלה 8</h3>
+
+            <h2>האם לקחת תרופות לפני או במועד תחילת התסמינים?</h2>
+
+            <img src="../Resources/complaints/Pain/Q8.jpg">
+        </div>
+        <div class="left_side">
+        <div class="desc">
+            <input type="radio" name="Q8" value="1" id="Q8A">
+            <label class="pos reply" for="Q8A">כן</label>
+
+            <input type="radio" name="Q8" value="0" id="Q8B">
+            <label class="neg reply" for="Q8B">לא</label>
+        </div>
+        </div>
+
+        </div>
+
+
+
+        <div id="Q9"  class="bool textCheck gradual">
+
+            <div class="right_side">
+
+                <h3>שאלה 9</h3>
+
+                <h2>האם יש משהו מסויים שמקל על הכאב?</h2>
+
+                <img src="../Resources/complaints/Pain/Q9.jpg">
+
+            </div>
+            <div class="left_side first" id="9_1">
+            <div class="desc">
+                <input type="radio" name="Q9" value="1" id="Q9Aa">
+                <label class="pos doMore" for="Q9Aa">כן</label>
+
+                <input type="radio" name="Q9" value="0" id="Q9Ba">
+                <label class="neg reply" for="Q9Ba">לא</label>
+            </div>
+            </div>
+
+            <div id="9_2" class="left_side second">
+
+                <h3 class="desc">ניתן לבחור ביותר מאפשרות אחת</h3>
+
+                <div class="checkboxes">
+                <input type="checkbox" name="Q9" value="A" id="Q9Ab">
+                <label for="Q9Ab">מאכל מסויים</label>
+
+                <input type="checkbox" name="Q9" value="B" id="Q9Bb">
+                <label for="Q9Bb">מאמץ</label>
+
+                <input type="checkbox" name="Q9" value="C" id="Q9C">
+                <label for="Q9C">תרופה מסויימת</label>
+
+                <input type="checkbox" name="Q9" value="D" id="Q9D">
+                <label for="Q9D">משכך כאבים (אקמול, אדוויל, אופטלגין וכו)</label>
+
+                <input type="checkbox" name="Q9" value="E" id="Q9E">
+                <label for="Q9E">תנוחה מסויימת \ הפעלת לחץ</label>
+
+                <input type="checkbox" name="Q9" value="F" id="Q9F">
+                <label for="Q9F">אחר (אספר לרופא)</label>
+
+                </div>
+
+                <div class="reply"></div>
+            </div>
+
+
+
+        </div>
+
+        <div id="Q10" class="mapRadio">
+
+        <div class="right_side">
+            <h3>שאלה 10</h3>
+            <h2>האם הכאב מקרין לאנשהו?</h2>
+
+            <div class="photoMap"> <ul>
+
+                <li class="upMid"><a class="hotspot reply" title="upMid">Upper Middle</a></li>
+
+                <li class="upLeft"><a class="hotspot reply" title="upLeft">Upper Left</a></li>
+
+                <li class="upRight"><a class="hotspot reply" title="upRight">Upper Right</a></li>
+
+                <li class="midMid"><a class="hotspot reply" title="midMid">Mid Center</a></li>
+
+                <li class="midLeft"><a class="hotspot reply" title="midLeft">Mid Left</a></li>
+
+                <li class="midRight"><a class="hotspot reply" title="midRight">Mid Right</a></li>
+
+                <li class="lowMid"><a class="hotspot reply" title="lowMid">Low Middle</a></li>
+
+                <li class="lowLeft"><a class="hotspot reply" title="lowLeft">Low Left</a></li>
+
+                <li class="lowRight"><a class="hotspot reply" title="lowRight">Low Right</a></li>
+
+            </ul>
+            </div>
+            
+            <input name="Q10" id="Q10A" hidden/>
+            
+        </div>
+
+        <div class="left_side">
+            <h1 class="desc">נא לסמן את המיקום המדוייק ביותר על גבי התמונה</h1>
+        </div>
+
+        </div>
+
+
+        <div id="Q11"  class="bool">
+
+        <div class="right_side">
+
+            <h3>שאלה 11</h3>
+
+            <h2>האם חווית כאבים כאלו בעבר?</h2>
+
+            <img src="../Resources/complaints/Pain/Q11.jpg">
+
+        </div>
+
+        <div class="left_side">
+            <div class="desc">
+            <input type="radio" name="Q11" value="1" id="Q11A">
+            <label class="neg reply" for="Q11A">כן</label>
+
+            <input type="radio" name="Q11" value="0" id="Q11B">
+            <label class="pos reply" for="Q11B">לא</label>
+            </div>
+        </div>
+
+        </div>
+
+    <div id="Q12" class="last">
+
+        <h2>תודה רבה!</h2>
+        <h3>ניתן עכשיו להגיש את הטוס ולהמתין לרופא, או לחזור אחורה ולבצע תיקונים</h3>
+        
+        <p>
+            <img src="../Resources/complaints/Pain/Q12.png" width="300" height="300">
+        </p>
+        
+        
+        <img id="finalize" class="submit" src="../Resources/submitText.png" width="150" height="150"> <img id="correct" src="../Resources/returnText.png" width="80" height="80">
+
+    </div>
+
+    </form>
+
+</div>
+
+    
+</body>
+</html>

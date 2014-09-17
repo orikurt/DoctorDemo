@@ -1,0 +1,35 @@
+body{
+
+}
+
+.wrapper{
+    border: 1px groove;
+    border-radius: 7;
+    float: left;
+    background: rgba(225, 255, 255, 0.2);
+}
+
+#complaint_queue{
+    width: 19%;
+    height: 80%;
+}
+
+#user_details{
+    width: 80%;
+    height: 75%;
+}
+
+#actions{
+    width: 80%;
+    height: 5%;
+}
+
+#complaint_queue td{
+    width: 10%;
+    text-align: center;
+}
+
+.action_button{
+    margin: 25px;
+    margin-top: 7px;
+}

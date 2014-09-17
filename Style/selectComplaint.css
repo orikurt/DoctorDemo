@@ -1,0 +1,25 @@
+.complaint{
+    width: 250;
+    height: 400;
+    float: left;
+    margin-left: 250;
+    margin-top: 50;
+}
+
+.complaint > img{
+    width: 225;
+    height: 300;
+}
+
+.complaint:hover {
+    border:1px solid #00c6ff;
+    border-radius: 3;
+    cursor: hand;
+    cursor: pointer;
+}
+
+#complaint_wrap{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
